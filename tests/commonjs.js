@@ -713,7 +713,6 @@ for (PATH of ['core-js-pure/commonjs', 'core-js/commonjs']) {
   ok(load('stage/3'));
   ok(load('stage/2'));
   ok(load('stage/1'));
-  ok(load('stage'));
 
   for (const key in compat) load('modules', key);
 
