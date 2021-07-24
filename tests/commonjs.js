@@ -509,7 +509,7 @@ for (PATH of ['core-js-pure/commonjs', 'core-js/commonjs']) {
     ok(instanceValues([]).call([1, 2, 3]).next().value === 1);
   }
 
-  for (const NS of ['stable', 'actual', 'full', 'web']) {
+  for (const NS of ['stable', 'actual', 'full']) {
     ok(typeof load(NS, 'dom-collections').iterator === 'function');
     ok(typeof load(NS, 'dom-collections/for-each') === 'function');
     ok(typeof load(NS, 'dom-collections/iterator') === 'function');
